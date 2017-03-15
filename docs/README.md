@@ -1,13 +1,13 @@
 # Links al deploy
 
-* [versión gitbooks](https://danielfernandezperez.gitbooks.io/rutas-dani2-edu-alex/content/)
-* [versión gh-pages](https://ull-esit-pl-1617.github.io/estudiar-las-rutas-en-expressjs-daniel-alejandro-aduanich/)
-* [versión iass](http://10.6.128.40/)
-* [versión heroku](https://rutas-daniel2-alex-adu.herokuapp.com/)
+* [versión gitbooks]()
+* [versión gh-pages]()
+* [versión iass]()
+* [versión heroku]()
 
 # Links a la especificación de la práctica
 
-* [Especificación](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/practicas/practicalearningrouting.html)
+* [Especificación](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicalearningcookies.html)
 * [Asignatura Campus Virtual](https://campusvirtual.ull.es/1617/course/view.php?id=1148)
 
 # Miembros

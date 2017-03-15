@@ -1,10 +1,10 @@
 var gulp = require('gulp');
-var shell = require('gulp-shell');
+//var shell = require('gulp-shell');
 //var task = require('shell-task');
 var ghpages = require('gh-pages');
 var gitbook = require('gitbook');
 var connect = require("gulp-connect")
-//var shell = require('shelljs');
+var shell = require('shelljs');
 
 // Scripts de automatización
 var WikiGenerator = require ('../scripts/generate-wiki.js');

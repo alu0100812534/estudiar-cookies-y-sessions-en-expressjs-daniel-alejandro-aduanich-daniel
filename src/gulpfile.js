@@ -1,23 +1,23 @@
 var gulp = require('gulp');
 var shell = require('gulp-shell');
-var task = require('shell-task');
+//var task = require('shell-task');
 var ghpages = require('gh-pages');
 var gitbook = require('gitbook');
 var connect = require("gulp-connect")
-var shell = require('shelljs');
+//var shell = require('shelljs');
 
 gulp.task('deploy', function(){
-	require ('./scripts/deploy-gitbook.js')
-	require ('./scripts/deploy-wiki.js');
+	require ('../scripts/deploy-gitbook.js')
+	require ('../scripts/deploy-wiki.js');
 });
 
 gulp.task('build', function(cb){
-	require ('./scripts/generate-wiki.js');
-	require ('./scripts/generate-gitbook.js');
+	require ('../scripts/generate-wiki.js');
+	require ('../scripts/generate-gitbook.js');
 });
 
 gulp.task('serve', function(){
-	shell.exec("gitbook serve txt");
+	shell.exec("gitbook serve ../docs");
 });
 
 gulp.task('heroku', function(){

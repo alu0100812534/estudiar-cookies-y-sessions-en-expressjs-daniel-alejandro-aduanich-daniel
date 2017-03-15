@@ -23,3 +23,4 @@
 ---
 * [Manejo de Cookies en ExpressJS](docs/ExpressJS/EJ1.md)
 * [Ejemplo de una sesión "auth" básica en NodeJS](docs/Sess/README.md)
+* [Ejemplo de persistencia usando Cookies y post](docs/Persistence/Persistence-cookie&post)

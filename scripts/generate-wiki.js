@@ -9,13 +9,7 @@ var path = require('path');
 var fs = require('fs-extra');
 var async = require('async');
 
-
-main();
-
-function main() {
-    var input = './txt';
-    var output = './wiki';
-
+function generate (input, output) {
     fs.mkdir(output, function() {
         // if it dir exists already, just override content
         generateWiki(input, output, function(err) {
@@ -27,6 +21,8 @@ function main() {
         });
     });
 }
+
+module.exports = generate
 
 function generateWiki(input, output, cb) {
     async.series([
@@ -56,4 +52,3 @@ function generateSidebar(config, cb) {
 
     fs.writeFile(config.output, data, cb);
 }
-

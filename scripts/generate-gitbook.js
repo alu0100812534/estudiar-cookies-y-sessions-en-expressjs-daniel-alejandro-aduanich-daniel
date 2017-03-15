@@ -1,8 +1,10 @@
+'use strict';
+
 var shell = require('shelljs');
 
-main();
-
-function main() {
+function generate (input, output) {
   console.log("Generating gitbook");
-  shell.exec("gitbook build txt gh-pages");
+  shell.exec("gitbook build " + input + " " + output);
 }
+
+module.exports = generate;

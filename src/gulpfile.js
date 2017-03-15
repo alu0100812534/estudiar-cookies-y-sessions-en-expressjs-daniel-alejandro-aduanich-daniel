@@ -6,14 +6,20 @@ var gitbook = require('gitbook');
 var connect = require("gulp-connect")
 //var shell = require('shelljs');
 
+// Scripts de automatización
+var WikiGenerator = require ('../scripts/generate-wiki.js');
+var GitbookGenerator = require ('../scripts/generate-gitbook.js');
+var WikiDeployer = require ('../scripts/deploy-wiki.js');
+var GitbookDeployer = require ('../scripts/deploy-gitbook.js')
+
 gulp.task('deploy', function(){
-	require ('../scripts/deploy-gitbook.js')
-	require ('../scripts/deploy-wiki.js');
+	WikiDeployer ("../package.json");
+	GitbookDeployer ("../package.json");
 });
 
 gulp.task('build', function(cb){
-	require ('../scripts/generate-wiki.js');
-	require ('../scripts/generate-gitbook.js');
+	WikiGenerator ("../docs", "../wiki");
+	GitbookGenerator ("../docs", "../gh-pages")
 });
 
 gulp.task('serve', function(){

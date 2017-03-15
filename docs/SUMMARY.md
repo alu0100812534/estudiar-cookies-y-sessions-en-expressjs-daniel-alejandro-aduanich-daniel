@@ -22,3 +22,4 @@
 * [Capitulo 7 -  GH-Pages](docs/TareasIniciales/GHPages/GHPages.md)
 ---
 * [Manejo de Cookies en ExpressJS](docs/ExpressJS/EJ1.md)
+* [Ejemplo de una sesión "auth" básica en NodeJS](docs/Sess/README.md)
